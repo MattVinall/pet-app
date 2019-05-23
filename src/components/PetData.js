@@ -1,13 +1,11 @@
 import React from 'react';
 import axios from 'axios';
-import PetList from './PetList';
 
 class PetData extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			data: [],
-			error: null
+			data: []
 		};
 	}
 
@@ -18,8 +16,8 @@ class PetData extends React.Component {
 			params: {
 				reqUrl: 'https://api.petfinder.com/v2/animals',
 				params: {
-					page: 2,
-					limit: 25,
+					page: 1,
+					limit: 100,
 					location: 'Toronto, ON'
 				},
 				clientId: 'sUT8NZdMY2j3glWRCUXtWLDv9sBZ4Kpa5zqmtN8WrCcJfneiWJ'
@@ -30,22 +28,21 @@ class PetData extends React.Component {
 		});
 	}
 	render() {
-		console.log('state', this.state.data);
+		console.log(this.state.data);
+
 		return (
-			<div>
+			<div className="petContainer wrapper">
 				{this.state.data.length > 1 ? (
 					this.state.data
-						.filter((data) => data.status !== 'adopted' && data.photos !== [])
+						.filter((data) => data.status !== 'adopted' && data.photos !== [] && data.photos.length === 1)
 						.map((pet, index) => {
 							return (
-								<div className="petContainer">
+								<div>
 									{Object.values(pet.photos).map((photo) => <img src={photo.medium} />)}
 									<h3>{pet.name}</h3>
-									<ul>
-										<li>{pet.species}</li>
-										<li key={index + 1}>{pet.age}</li>
-										<li key={index + 2}>{pet.breeds.primary}</li>
-										<li>{pet.status}</li>
+									<ul className="petInfo">
+										<li key={index}>{pet.age}</li>
+										<li key={index + 1}>{pet.breeds.primary}</li>
 									</ul>
 								</div>
 							);

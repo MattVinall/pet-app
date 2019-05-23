@@ -5,10 +5,47 @@ body {
 
 body {
 	font-size: 2rem;
-	text-align: center;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 img {
 	max-width: 100%;
 	margin: 0 auto;
+	height: 350px;
+	width: 350px;
+	object-fit: cover;
+}
+
+header {
+	background: url(../src/assets/adopt.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100vh;
+}
+
+.wrapper {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.petContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.petContainer ul {
+	text-align: center;
+	margin: 25px;
+}
+
+.petContainer h3 {
+	text-align: center;
 }
