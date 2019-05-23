@@ -7,7 +7,7 @@ const App = () => {
 	return (
 		<div className="App">
 			<SearchPets />
-			<PetData />
+			{/* <PetData /> */}
 		</div>
 	);
 };
