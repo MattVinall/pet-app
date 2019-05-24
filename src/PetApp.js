@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import './App.scss';
 import axios from 'axios';
+import DisplayPetData from './components/DisplayPetData';
 
-class SearchPets extends Component {
+class PetApp extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -59,7 +61,7 @@ class SearchPets extends Component {
 				data: []
 			},
 			() => {
-				this.getPetData(e);
+				this.getPetData();
 			}
 		);
 	};
@@ -82,9 +84,10 @@ class SearchPets extends Component {
 						</form>
 					</div>
 				</section>
+				<DisplayPetData data={this.state.data} errorHandling={this.state.error} />
 			</div>
 		);
 	}
 }
 
-export default SearchPets;
+export default PetApp;
