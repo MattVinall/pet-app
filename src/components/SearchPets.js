@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import { get } from 'https';
 
 class SearchPets extends Component {
 	constructor() {
@@ -27,7 +26,7 @@ class SearchPets extends Component {
 					page: 1,
 					limit: 100,
 					location: `${this.state.searchParam}`,
-					distance: 25
+					distance: 50
 				},
 				clientId: 'sUT8NZdMY2j3glWRCUXtWLDv9sBZ4Kpa5zqmtN8WrCcJfneiWJ'
 			}

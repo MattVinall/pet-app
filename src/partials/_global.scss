@@ -1,0 +1,28 @@
+html,
+body {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	margin: 0 auto;
+	height: 350px;
+	width: 350px;
+	object-fit: cover;
+}
+
+.wrapper {
+	max-width: 85%;
+	margin: 0 auto;
+}

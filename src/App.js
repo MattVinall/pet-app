@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import PetData from './components/PetData';
 import SearchPets from './components/SearchPets';
-
+import './App.scss';
 const App = () => {
 	return (
 		<div className="App">
