@@ -268,4 +268,9 @@ header {
 .petContainer h3 {
   text-align: center;
 }
+
+input {
+  width: 25rem;
+  padding: 15px 30px;
+}
 /*# sourceMappingURL=App.css.map */

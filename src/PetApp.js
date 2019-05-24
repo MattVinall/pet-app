@@ -70,15 +70,17 @@ class PetApp extends Component {
 		return (
 			<div>
 				<header />
+
 				<section className="searchBar">
 					<div className="wrapper searchContainer">
 						<form onSubmit={this.handleSubmit} action="" className="searchForm">
-							<label htmlFor="searchTerm">Enter Your Potal Code (ex: A2R 5L4):</label>
+							<label htmlFor="searchTerm">Enter Your Potal Code:</label>
 							<input
 								value={this.state.searchTerm}
 								onChange={this.handleChange}
 								id="searchTerm"
 								type="text"
+								placeholder="A5K 2C7"
 							/>
 							<input type="submit" value="search" />
 						</form>

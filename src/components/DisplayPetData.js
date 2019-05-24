@@ -17,12 +17,12 @@ const DisplayPetData = (props) => (
 							<ul className="petInfo">
 								<li key={index}>{pet.age}</li>
 								<li key={index + 1}>{pet.breeds.primary}</li>
-								<li />
 							</ul>
 						</div>
 					);
 				})
 		) : null}
+		{props.data === [] ? <p>No fur babies in your local area - try again later</p> : null}
 	</div>
 );
 
