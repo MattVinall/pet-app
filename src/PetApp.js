@@ -70,7 +70,6 @@ class PetApp extends Component {
 		return (
 			<div>
 				<header />
-
 				<section className="searchBar">
 					<div className="wrapper searchContainer">
 						<form onSubmit={this.handleSubmit} action="" className="searchForm">

@@ -258,6 +258,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 100px 0;
 }
 
 .petContainer ul {
@@ -269,7 +270,20 @@ header {
   text-align: center;
 }
 
-input {
+.searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+.searchForm input {
   width: 25rem;
   padding: 15px 30px;
 }
