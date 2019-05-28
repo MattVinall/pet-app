@@ -6,29 +6,33 @@ header {
 	height: 100vh;
 }
 
-.petContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 100px 0;
-}
-
-.petContainer ul {
-	text-align: center;
-	margin: 25px;
-}
-
-.petContainer h3 {
-	text-align: center;
+.searchContainer {
+	border: 2px solid red;
 }
 
 .searchForm {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 50px 0;
+	margin: 50px auto;
 	input {
 		width: 25rem;
 		padding: 15px 30px;
+		margin: 0 15px;
+	}
+}
+
+.petContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 50px auto;
+	border: 4px solid darkcyan;
+	ul {
+		text-align: center;
+		margin: 30px;
+	}
+	h3 {
+		text-align: center;
 	}
 }

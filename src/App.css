@@ -249,25 +249,8 @@ header {
   height: 100vh;
 }
 
-.petContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 100px 0;
-}
-
-.petContainer ul {
-  text-align: center;
-  margin: 25px;
-}
-
-.petContainer h3 {
-  text-align: center;
+.searchContainer {
+  border: 2px solid red;
 }
 
 .searchForm {
@@ -280,11 +263,34 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .searchForm input {
   width: 25rem;
   padding: 15px 30px;
+  margin: 0 15px;
+}
+
+.petContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px auto;
+  border: 4px solid darkcyan;
+}
+
+.petContainer ul {
+  text-align: center;
+  margin: 30px;
+}
+
+.petContainer h3 {
+  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */

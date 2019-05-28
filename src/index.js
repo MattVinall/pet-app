@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PetApp from './PetApp';
 import * as serviceWorker from './serviceWorker';
+import GetPetData from './components/GetPetData';
 
-ReactDOM.render(<PetApp />, document.getElementById('root'));
+ReactDOM.render(<GetPetData />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

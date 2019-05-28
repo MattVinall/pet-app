@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.scss';
+import '../App.scss';
 import axios from 'axios';
-import DisplayPetData from './components/DisplayPetData';
+import DisplayPetData from './DisplayPetData';
 
-class PetApp extends Component {
+class GetPetData extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -70,20 +70,18 @@ class PetApp extends Component {
 		return (
 			<div>
 				<header />
-				<section className="searchBar">
-					<div className="wrapper searchContainer">
-						<form onSubmit={this.handleSubmit} action="" className="searchForm">
-							<label htmlFor="searchTerm">Enter Your Potal Code:</label>
-							<input
-								value={this.state.searchTerm}
-								onChange={this.handleChange}
-								id="searchTerm"
-								type="text"
-								placeholder="A5K 2C7"
-							/>
-							<input type="submit" value="search" />
-						</form>
-					</div>
+				<section className="wrapper searchContainer">
+					<form onSubmit={this.handleSubmit} action="" className="searchForm">
+						<label htmlFor="searchTerm">Enter Your Potal Code:</label>
+						<input
+							value={this.state.searchTerm}
+							onChange={this.handleChange}
+							id="searchTerm"
+							type="text"
+							placeholder="A5K 2C7"
+						/>
+						<input type="submit" value="search" />
+					</form>
 				</section>
 				<DisplayPetData data={this.state.data} errorHandling={this.state.error} />
 			</div>
@@ -91,4 +89,4 @@ class PetApp extends Component {
 	}
 }
 
-export default PetApp;
+export default GetPetData;
