@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const DisplayPetData = (props) => (
 	<div className="petContainer wrapper">
@@ -22,7 +23,6 @@ const DisplayPetData = (props) => (
 					);
 				})
 		) : null}
-		{props.data === [] ? <p>No fur babies in your local area - try again later</p> : null}
 	</div>
 );
 

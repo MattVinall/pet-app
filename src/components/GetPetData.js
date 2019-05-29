@@ -38,10 +38,14 @@ class GetPetData extends Component {
 				const filteredPetData = [ ...petData ].filter(
 					(data) => data.status !== 'adopted' && data.photos !== [] && data.photos.length === 1
 				);
+				console.log(filteredPetData);
 				this.setState(() => ({ data: filteredPetData }));
 			})
-			.catch((err) => {
-				console.log(err);
+			.catch(() => {
+				// const errorMessage = 'No local pets available at this time, please try again later';
+				// {
+				// 	this.state.data.length === 0 ? this.setState({ error: errorMessage }) : null;
+				// }
 			});
 	};
 
